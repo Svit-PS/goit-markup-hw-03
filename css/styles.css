@@ -1,0 +1,227 @@
+:root {
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  /* text color */
+  --main-txt-color: #212121;
+  --secondary-txt-color: #757575;
+  --white-txt-color: #ffffff;
+  --accent-txt-color: #2196f3;
+  --dark-txt-color: #000000;
+  --flooter-text: rgba(255, 255, 255, 0.6);
+
+  /* background color */
+  --main-bcg-color: #ffffff;
+  --secondary-bcg-color: #f5f4fa;
+  --dark-bcg-color: #2f303a;
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--main-bcg-color);
+  color: var(--main-txt-color);
+}
+
+.link {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-txt-color);
+}
+
+li {
+  list-style-type: none;
+}
+
+/* HEADER */
+.logo1 {
+  color: var(--accent-txt-color);
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.logo2 {
+  color: var(--dark-txt-color);
+  /* font-family: Oleo Script; */
+  font-weight: 400;
+}
+
+.logo3 {
+  color: var(--white-txt-color);
+  /* font-family: Oleo Script; */
+  font-weight: 400;
+}
+
+.accent-link {
+  color: var(--accent-txt-color);
+}
+
+.navigation-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.link-contact {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--secondary-txt-color);
+}
+
+/* HERO */
+.hero {
+  background-color: var(--dark-bcg-color);
+}
+
+.hero-title {
+  color: var(--white-txt-color);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  width: 216px;
+  height: 50px;
+  top: 430px;
+  left: 692px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* advantages */
+.advan-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.advan-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--secondary-txt-color);
+}
+
+/* Section */
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* Team */
+.team {
+  background-color: var(--secondary-bcg-color);
+}
+
+.team-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--secondary-txt-color);
+}
+
+/* flooter */
+.flooter {
+  background-color: var(--dark-bcg-color);
+}
+
+.flooter address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--white-txt-color);
+}
+
+.flooter-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--flooter-text);
+}
+
+/* portfolio */
+.portfolio-btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background-color: var(--secondary-bcg-color);
+  width: 125px;
+  height: 38px;
+  top: 174px;
+  left: 593px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--main-txt-color);
+}
+
+.portfolio-btn:focus,
+.portfolio-btn:hover,
+.accent-btn {
+  color: var(--white-txt-color);
+  background-color: var(--accent-txt-color);
+}
+
+.portfolio-link {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.portfolio-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--secondary-txt-color);
+}
+
+.address {
+  font-style: normal;
+}
