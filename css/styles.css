@@ -71,6 +71,20 @@ p {
   margin-block-end: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .logo1 {
   color: var(--accent-txt-color);
   font-family: var(--secondary-font);
@@ -101,8 +115,6 @@ p {
 .header-box {
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .navigation {
@@ -134,7 +146,9 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-align: left;
+  /* text-align: left; */
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-contact {
@@ -143,8 +157,10 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-align: left;
+  /* text-align: left; */
   color: var(--secondary-txt-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* SECTION */
@@ -195,11 +211,6 @@ p {
 /* advantages */
 .advantages {
   padding-bottom: 0;
-}
-
-.adv-h2 {
-  visibility: hidden;
-  position: absolute;
 }
 
 .adv-list {
@@ -292,11 +303,11 @@ p {
 /******** flooter ********/
 .flooter {
   background-color: var(--dark-bcg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .fl-box {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .flooter address {
@@ -320,21 +331,21 @@ p {
   margin-top: 20px;
 }
 
+.adress-list {
+   margin-top: 9px;
+}
+
 .address-item {
   margin-top: 9px;
 }
 
 /************ portfolio ********/
-.portf-h1 {
-  visibility: hidden;
-  position: absolute;
-}
 
 .portf-btn-box {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .portfolio-btn {
@@ -345,11 +356,11 @@ p {
   text-align: center;
   background-color: var(--secondary-bcg-color);
   color: var(--main-txt-color);
-  /* width: 125px; */
   height: 38px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  padding: 6px 22px;
 }
 
 .portfolio-btn:focus,
@@ -363,16 +374,12 @@ p {
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
-  row-gap: 20px;
+  row-gap: 30px;
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - 72px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   background: var(--main-bcg-color);
-  border-bottom: 1px solid var(--portfolio-bcg-color);
-  border-top: 1px solid var(--portfolio-bcg-color);
-  border-left: 1px solid var(--portfolio-bcg-color);
-  border-right: 1px solid var(--portfolio-bcg-color);
 }
 
 .portfolio-link {
@@ -383,7 +390,11 @@ p {
 .portfolio-link-box {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid var(--portfolio-bcg-color);
+  border-left: 1px solid var(--portfolio-bcg-color);
+  border-right: 1px solid var(--portfolio-bcg-color); 
 }
 
 .portfolio-title {
